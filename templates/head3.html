@@ -1,0 +1,23 @@
+<table style="width: 100%;">
+    <tr>
+        <td class="cl">
+            <table style="width: 100%; text-align: center">
+                <tr>
+                    <td><b>T°</b></td>
+                    <td style="background-color: #eeeeee"><b>PA</b></td>
+                    <td><b>FC</b></td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table style="width: 100%;">
+                <tr>
+                    {%- for t in temps %}
+                    <td style="width: 4%">{{ t }}h</td>
+                    {%- endfor %}
+                </tr>
+            </table>
+        </td>
+        <td class="cr"></td>
+    </tr>
+</table>

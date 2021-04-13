@@ -1,0 +1,59 @@
+<table style="width: 100%;" border="0">
+    <tr>
+        <td class="cl" style="margin: 0; padding: 0;">
+            <table style="width: 100%;">
+                {% for c in range(0,7) %}
+                <tr class="main-table" style="text-align: center; vertical-align: bottom; height: 26px; margin: 0; padding: 0;">
+                    <td style="margin: 0; padding: 0;">{{41-c}}</td>
+                    <td style="margin: 0; padding: 0; background-color: #eeeeee">{{ pa[c] }}</td>
+                    <td style="margin: 0; padding: 0;">{{ 160-(20*c) }}</td>
+                </tr>
+                {% if c == 4 %}
+                <tr style="margin: 0; padding: 0;">
+                    <td style="height: 1px"></td>
+                </tr>
+                {% endif %}
+                {% endfor %}
+            </table>
+        </td>
+        <td style="margin: 0; padding: 0;">
+            <table style="width: 100%;">
+                {% for c in range(0,7) %}
+                <tr style="margin: 0; padding: 0;">
+
+                                {% set border='border2' %}
+                                {%- for t in temps %}
+                                {% if t==13 and c==6 %}
+                                {% set border='border4' %}
+                                {% elif t==13 %}
+                                {% set border='border3r' %}
+                                {% elif c==6 %}
+                                {% set border='border3b' %}
+                                {% endif %}
+                                {% if t is divisibleby 2 %}
+                                <td style="width: 4%; margin: 0; padding: 0" class="temp-table {{border}}">
+                                    {% include 'temp_case.html' %}
+                                </td>
+                                {% else %}
+                                <td style="width: 4%; background-color: #eeeeee; margin: 0; padding: 0;"
+                                    class="temp-table {{border}}">
+                                    {% include 'temp_case.html' %}
+                                </td>
+                                {% endif %}
+                                {%- endfor %}
+
+                </tr>
+                {% if c == 4 %}
+                <tr style="margin: 0; padding: 0;">
+                    <td style="background-color: red; height: 1px" colspan="24"></td>
+                </tr>
+                {% endif %}
+                {% endfor %}
+            </table>
+        </td>
+        <td class="cr" style="height: 100%">
+            {% include 'right/temp_right.html' %}
+        </td>
+    </tr>
+
+</table>

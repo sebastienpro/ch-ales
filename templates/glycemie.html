@@ -1,0 +1,25 @@
+<table style="width: 100%;" >
+    <tr style="padding: 0; margin: 0;">
+        <td class="cl-title" style="padding: 0; margin: 0;">
+        </td>
+        <td class="cl-1" style="padding: 0; margin: 0;">
+            <table style="padding: 0; margin: 0;">
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"> Glycemie</td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell">
+                        Insuline : <input type="checkbox" class="checkbox__control"> IVSE <input type="checkbox" class="checkbox__control"> S/C
+                    </td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"> Installation</td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"> Nursing</td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"> Soins de bouche</td></tr>
+            </table>
+        </td>
+        <td style="padding: 0; margin: 0;">
+            {% with nb_rows=5 %}
+                {% include 'timed-table.html' %}
+            {% endwith %}
+        </td>
+        <td class="cr" style="height: 100%;">
+            {% include 'right/gly-right.html' %}
+        </td>
+    </tr>
+</table>

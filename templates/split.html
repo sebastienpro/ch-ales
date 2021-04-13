@@ -1,0 +1,19 @@
+<table style="width: 100%">
+    <tr>
+        {% if title != '' %}
+            <td class="cl title">{{ title }}</td>
+        {% else %}
+            <td class="cl"></td>
+        {% endif %}
+        <td>
+            <table style="width: 100%;">
+                <tr>
+                    {%- for t in temps %}
+                    <td style="width: 4%">{{ t }}h</td>
+                    {%- endfor %}
+                </tr>
+            </table>
+        </td>
+        <td class="cr"></td>
+    </tr>
+</table>

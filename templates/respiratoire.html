@@ -1,0 +1,33 @@
+<table style="width: 100%;" >
+    <tr style="padding: 0; margin: 0;">
+        <td class="cl-title title" style="padding: 0; margin: 0;">
+            R<br>e<br>s<br>p<br>i<br>r<br>a<br>t<br>o<br>i<br>r<br>e
+        </td>
+        <td class="cl-1" style="padding: 0; margin: 0;">
+            <table style="padding: 0; margin: 0;">
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"> SaO2</td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"> Frequ respiratoire</td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"> Rox</td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"> Mode de ventilation</td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"> FiO2</td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"> Vol/min</td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"> VIT/VTE</td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"> Frequ Machine</td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"> PEP</td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"> AI</td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"> P insp Max</td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"> Aspi Sus-Glottique</td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"> Aspi Sous-Glottique</td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"> Aerosol</td></tr>
+            </table>
+        </td>
+        <td style="padding: 0; margin: 0;">
+            {% with nb_rows=14 %}
+                {% include 'timed-table.html' %}
+            {% endwith %}
+        </td>
+        <td class="cr" style="height: 100%;">
+            {% include 'right/resp-right.html' %}
+        </td>
+    </tr>
+</table>
