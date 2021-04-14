@@ -116,9 +116,17 @@
             border-radius: 0.25em;
             border: 0.1em solid currentColor;
             vertical-align: middle;
+            position: relative;
+            bottom: 1px;
+        }
+        .cell-height0 {
+            height: 15px;
         }
         .cell-height {
             height: 20px;
+        }
+        .cell-height2 {
+            height: 30px;
         }
         .lcell{
             padding: 0; margin: 0;height: 100%;
@@ -169,6 +177,26 @@
     </tr>
     <tr>
         <td>{% include 'neuro.html' %}</td>
+    </tr>
+    <tr>
+        <td>
+            {% with title='' %}
+                {% include 'split.html' %}
+            {% endwith %}
+        </td>
+    </tr>
+    <tr>
+        <td>{% include 'digestif.html' %}</td>
+    </tr>
+    <tr>
+        <td>
+            {% with title='' %}
+                {% include 'split.html' %}
+            {% endwith %}
+        </td>
+    </tr>
+    <tr>
+        <td>{% include 'rea.html' %}</td>
     </tr>
 </table>
 </body>

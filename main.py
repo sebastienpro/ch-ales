@@ -13,7 +13,7 @@ def template_main():
 @app.route("/test.pdf")
 def pdf_main():
 
-    css=CSS(string='@page { size: A4; margin: 0.5cm }')
+    css=CSS(string='@page { size: A3; margin: 0.5cm }')
     html = render_template('main.html', temps=temp_table(), pa=pa_table())
     return render_pdf(HTML(string=html), stylesheets=[css])
 

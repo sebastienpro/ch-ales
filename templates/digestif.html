@@ -1,0 +1,46 @@
+<table style="width: 100%;" >
+    <tr style="padding: 0; margin: 0;">
+        <td class="cl-title title" style="padding: 0; margin: 0;">
+            D<br>I<br>G<br>E<br>S<br>T<br>I<br>F<br>/<br>P<br>E<br>R<br>T<br>E<br>S
+        </td>
+        <td class="cl-1" style="padding: 0; margin: 0;">
+            <table style="padding: 0; margin: 0;">
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell">
+                        Diurèse : <input type="checkbox" class="checkbox__control"> SAD <input type="checkbox" class="checkbox__control"> Mictic
+                    </td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell">
+                        Selles : <input type="checkbox" class="checkbox__control"> Guenter <input type="checkbox" class="checkbox__control"> Stomie
+                    </td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell">
+                        SNG : <input type="checkbox" class="checkbox__control"> sac <input type="checkbox" class="checkbox__control"> aspi
+                    </td></tr>
+                    <tr class="cell-left cell-height bg-g" style="padding: 0; margin: 0;"><td class="lcell">
+                        Drain / redon <input type="checkbox" class="checkbox__control"> aspi
+                    </td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell" style="text-indent: 40px">
+                        1 - Qte / Aspect
+                    </td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell" style="text-indent: 40px">
+                        2 - Qte / Aspect
+                    </td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell" style="text-indent: 40px">
+                        3 - Qte / Aspect
+                    </td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell">
+                        Dialise
+                    </td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell">
+                        PIA
+                    </td></tr>
+            </table>
+        </td>
+        <td style="padding: 0; margin: 0;">
+            {% with nb_rows=9, cellsize='cell-height', greyrows=[3] %}
+                {% include 'timed-table.html' %}
+            {% endwith %}
+        </td>
+        <td class="cr" style="height: 100%;">
+            {% include 'right/dig-right.html' %}
+        </td>
+    </tr>
+</table>
