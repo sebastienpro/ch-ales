@@ -1,5 +1,8 @@
 ###Clone repo
-```git clone git@github.com:sebastienpro/ch-ales.git```
+```bash
+git clone git@github.com:sebastienpro/ch-ales.git
+cd chales
+```
 
 ###Create venv
 ```bash
