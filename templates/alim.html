@@ -1,0 +1,28 @@
+<table style="width: 100%;" >
+    <tr style="padding: 0; margin: 0;">
+        <td class="cl-title title bg-red" style="padding: 0; margin: 0;">
+            A<br>L<br>I<br>M
+        </td>
+        <td class="cl-1" style="padding: 0; margin: 0;">
+            <table style="padding: 0; margin: 0;">
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"> REPAS</td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"> EAU</td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"> ALIM ENTÉRALE</td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell">
+                        <table style="text-indent: 5px;"><tr>
+                            <td><input type="checkbox" class="checkbox__control"> HP</td>
+                            <td><input type="checkbox" class="checkbox__control"> FIBRE</td>
+                            <td><input type="checkbox" class="checkbox__control"> ISO</td>
+                        </tr></table>
+                    </td></tr>
+            </table>
+        </td>
+        <td style="padding: 0; margin: 0;">
+            {% with nb_rows=4 %}
+                {% include 'timed-table.html' %}
+            {% endwith %}
+        </td>
+        <td class="cr" style="height: 100%;">
+        </td>
+    </tr>
+</table>

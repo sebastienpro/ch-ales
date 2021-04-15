@@ -6,28 +6,39 @@
         <td class="cl-1" style="padding: 0; margin: 0;">
             <table style="padding: 0; margin: 0;">
                     <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell">
-                        Diurèse : <input type="checkbox" class="checkbox__control"> SAD <input type="checkbox" class="checkbox__control"> Mictic
+                        <table class="indent"><tr>
+                            <td style="width: 35%;">Diurèse :</td>
+                            <td style="width: 35%;"><input type="checkbox" class="checkbox__control"> SAD</td>
+                            <td style="width: 35%;"><input type="checkbox" class="checkbox__control"> Mictic</td>
+                        </tr></table>
                     </td></tr>
                     <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell">
-                        Selles : <input type="checkbox" class="checkbox__control"> Guenter <input type="checkbox" class="checkbox__control"> Stomie
+                        <table class="indent"><tr>
+                            <td style="width: 35%;">Selles :</td>
+                            <td style="width: 35%;"><input type="checkbox" class="checkbox__control"> Guenter</td>
+                            <td style="width: 35%;"><input type="checkbox" class="checkbox__control"> Stomie</td>
+                        </tr></table>
+
                     </td></tr>
                     <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell">
-                        SNG : <input type="checkbox" class="checkbox__control"> sac <input type="checkbox" class="checkbox__control"> aspi
+                        <table class="indent"><tr>
+                            <td style="width: 35%;">SNG :</td>
+                            <td style="width: 35%;"><input type="checkbox" class="checkbox__control"> aspi</td>
+                            <td style="width: 35%;"><input type="checkbox" class="checkbox__control"> sac</td>
+                        </tr></table>
                     </td></tr>
                     <tr class="cell-left cell-height bg-g" style="padding: 0; margin: 0;"><td class="lcell">
-                        Drain / redon <input type="checkbox" class="checkbox__control"> aspi
+                        <table class="indent"><tr>
+                            <td style="width: 35%;">Drain / redon</td>
+                            <td style="width: 35%;"><input type="checkbox" class="checkbox__control"> aspi</td>
+                            <td style="width: 35%;"><input type="checkbox" class="checkbox__control"> déclive</td>
+                        </tr></table>
                     </td></tr>
                     <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell" style="text-indent: 40px">
                         1 - Qte / Aspect
                     </td></tr>
-                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell" style="text-indent: 40px">
-                        2 - Qte / Aspect
-                    </td></tr>
-                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell" style="text-indent: 40px">
-                        3 - Qte / Aspect
-                    </td></tr>
                     <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell">
-                        Dialise
+                        Dialyse
                     </td></tr>
                     <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell">
                         PIA
@@ -35,7 +46,7 @@
             </table>
         </td>
         <td style="padding: 0; margin: 0;">
-            {% with nb_rows=9, cellsize='cell-height', greyrows=[3] %}
+            {% with nb_rows=7, cellsize='cell-height' %}
                 {% include 'timed-table.html' %}
             {% endwith %}
         </td>

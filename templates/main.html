@@ -5,7 +5,7 @@
     <title></title>
     <style type="text/css">
         body {
-            font-size: 6pt;
+            font-size: 8pt;
         }
 
         .w100 {
@@ -30,9 +30,15 @@
         .entete {
             width: 100%;
         }
+        .indent {
+            text-indent: 5px;
+        }
 
         .bg-g {
             background-color: #eeeeee;
+        }
+        .bg-red {
+            background-color: rgba(70,130,180, 0.5) !important;
         }
 
         .title {
@@ -123,10 +129,10 @@
             height: 15px;
         }
         .cell-height {
-            height: 20px;
+            height: 25px;
         }
         .cell-height2 {
-            height: 30px;
+            height: 40px;
         }
         .lcell{
             padding: 0; margin: 0;height: 100%;
@@ -197,6 +203,26 @@
     </tr>
     <tr>
         <td>{% include 'rea.html' %}</td>
+    </tr>
+    <tr>
+        <td>
+            {% with title='' %}
+                {% include 'split.html' %}
+            {% endwith %}
+        </td>
+    </tr>
+    <tr>
+        <td>{% include 'peros.html' %}</td>
+    </tr>
+    <tr>
+        <td>
+            {% with title='' %}
+                {% include 'split.html' %}
+            {% endwith %}
+        </td>
+    </tr>
+    <tr>
+        <td>{% include 'alim.html' %}</td>
     </tr>
 </table>
 </body>

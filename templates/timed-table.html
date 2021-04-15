@@ -1,15 +1,15 @@
 <table style="padding: 0; margin: 0">
-    {% if not cellsize %}
-        {% set cellclass='cell-height' %}
-    {% else %}
-        {% set cellclass=cellsize %}
-    {% endif %}
     {% for r in range(0,nb_rows) %}
     {% if r in greyrows %}
         <tr class="main-table cell-height" style="padding: 0; margin: 0;">
             <td colspan="{{temps|length}}" style="width: 4%; padding: 0; margin: 0; background-color: #eeeeee; height: 100%;"></td>
         </tr>
     {% else %}
+        {% if r in bigrow %}
+            {% set cellclass='cell-height2' %}
+        {% else %}
+            {% set cellclass='cell-height' %}
+        {% endif %}
         <tr class="main-table {{cellclass}}" style="padding: 0; margin: 0;">
             {%- for t in temps %}
             {% if t is divisibleby 2%}
