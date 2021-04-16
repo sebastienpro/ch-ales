@@ -1,3 +1,4 @@
 Jinja2
 flask
 Flask-WeasyPrint
+gunicorn
