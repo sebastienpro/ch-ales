@@ -1,9 +1,3 @@
-### Clone repo
-```bash
-git clone git@github.com:sebastienpro/ch-ales.git
-cd chales
-```
-
 ### install weasyprint dependencies
 https://weasyprint.readthedocs.io/en/latest/install.html#macos
 
@@ -16,8 +10,14 @@ brew install python3 cairo pango gdk-pixbuf libffi
 ### Create venv
 ```bash
 python3 -m venv venv
-
 source ven/bin/activate
+
+```
+
+### Clone repo
+```bash
+git clone git@github.com:sebastienpro/ch-ales.git
+cd chales
 ```
 
 ### install pip requirements
