@@ -10,7 +10,7 @@ def template_main():
     return render_template('main.html', temps=temp_table(), pa=pa_table())
 
 
-@app.route("/test.pdf")
+@app.route("/rea.pdf")
 def pdf_main():
 
     css=CSS(string='@page { size: 450mm 620mm; margin: 0.5cm; }')
