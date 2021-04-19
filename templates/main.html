@@ -130,10 +130,10 @@
             height: 15px;
         }
         .cell-height {
-            height: 25px;
+            height: 24px;
         }
         .cell-height2 {
-            height: 40px;
+            height: 35px;
         }
         .lcell{
             padding: 0; margin: 0;height: 100%;
@@ -156,8 +156,14 @@
         <td>{% include 'temperature.html' %}</td>
     </tr>
     <tr>
+        <td>{% include 'pam.html' %}</td>
+    </tr>
+    <tr>
+        <td>{% include 'frequ-surveillance.html' %}</td>
+    </tr>
+    <tr>
         <td>
-            {% with title='PAM' %}
+            {% with title='' %}
                 {% include 'split.html' %}
             {% endwith %}
         </td>
@@ -176,21 +182,7 @@
         <td>{% include 'glycemie.html' %}</td>
     </tr>
     <tr>
-        <td>
-            {% with title='' %}
-                {% include 'split.html' %}
-            {% endwith %}
-        </td>
-    </tr>
-    <tr>
         <td>{% include 'neuro.html' %}</td>
-    </tr>
-    <tr>
-        <td>
-            {% with title='' %}
-                {% include 'split.html' %}
-            {% endwith %}
-        </td>
     </tr>
     <tr>
         <td>{% include 'digestif.html' %}</td>
@@ -214,13 +206,6 @@
     </tr>
     <tr>
         <td>{% include 'peros.html' %}</td>
-    </tr>
-    <tr>
-        <td>
-            {% with title='' %}
-                {% include 'split.html' %}
-            {% endwith %}
-        </td>
     </tr>
     <tr>
         <td>{% include 'alim.html' %}</td>

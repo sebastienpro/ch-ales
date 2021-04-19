@@ -8,14 +8,10 @@
                     <tr class="cell-left cell-height bg-g" style="padding: 0; margin: 0;"><td class="lcell"> <b>Rea:                ml/24h</b></td></tr>
                     <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell">
                         <table><tr>
-                            <td style="text-indent: 5px; width: 50%;"><input type="checkbox" class="checkbox__control"> B1</td>
-                            <td style="text-indent: 5px; width: 50%;"><input type="checkbox" class="checkbox__control"> B6</td>
-                        </tr></table>
-                    </td></tr>
-                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell">
-                        <table><tr>
-                            <td style="text-indent: 5px; width: 50%;"><input type="checkbox" class="checkbox__control"> C</td>
-                            <td style="text-indent: 5px; width: 50%;"><input type="checkbox" class="checkbox__control"> N</td>
+                            <td style="text-indent: 5px; width: 25%;"><input type="checkbox" class="checkbox__control"> B1</td>
+                            <td style="text-indent: 5px; width: 25%;"><input type="checkbox" class="checkbox__control"> B6</td>
+                            <td style="text-indent: 5px; width: 25%;"><input type="checkbox" class="checkbox__control"> C</td>
+                            <td style="text-indent: 5px; width: 25%;"><input type="checkbox" class="checkbox__control"> N</td>
                         </tr></table>
                     </td></tr>
                     <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell">
@@ -74,10 +70,13 @@
                     <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"></td></tr>
                     <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"></td></tr>
                     <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"></td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"></td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"></td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"></td></tr>
             </table>
         </td>
         <td style="padding: 0; margin: 0;">
-            {% with nb_rows=19, greyrows=[0,4,8,10,12], bigrow=[5, 6, 11]%}
+            {% with nb_rows=21, greyrows=[0,3,7,9,11], bigrow=[4, 5, 10]%}
                 {% include 'timed-table.html' %}
             {% endwith %}
         </td>
