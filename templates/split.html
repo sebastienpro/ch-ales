@@ -1,19 +1,20 @@
 <table style="width: 100%">
     <tr>
+        <td class="cl-title"></td>
         {% if title != '' %}
-            <td class="cl bg-g"><b>{{ title }}:</b></td>
+            <td class="cl-1 bg-g"><b>{{ title }}:</b></td>
         {% else %}
-            <td class="cl"></td>
+            <td class="cl-1"></td>
         {% endif %}
         <td>
             <table style="width: 100%;">
                 <tr>
                     {%- for t in temps %}
-                    <td style="width: 4%">{{ t }}h</td>
+                    <td style="width: 3%">{{ t }}h</td>
                     {%- endfor %}
                 </tr>
             </table>
-        </td>
-        <td class="cr"></td>
+        </td><!--
+        <td class="cr"></td>-->
     </tr>
 </table>

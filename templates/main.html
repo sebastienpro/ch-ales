@@ -18,8 +18,9 @@
         }
 
         .cl-1 {
-            width: 14%;
+            width: 230px;
         }
+
         .cl-title {
             width: 1%;
         }
@@ -31,6 +32,7 @@
         .entete {
             width: 100%;
         }
+
         .indent {
             text-indent: 5px;
         }
@@ -38,8 +40,9 @@
         .bg-g {
             background-color: #eeeeee;
         }
+
         .bg-red {
-            background-color: rgba(70,130,180, 0.5) !important;
+            background-color: rgba(70, 130, 180, 0.5) !important;
         }
 
         .title {
@@ -56,10 +59,11 @@
             padding: 0;
             width: 100%;
         }
-         tr, td {
-             border-collapse: collapse;
+
+        tr, td {
+            border-collapse: collapse;
             border-spacing: 0;
-         }
+        }
 
         .main-table {
             border-collapse: collapse;
@@ -75,34 +79,44 @@
             border-spacing: 0;
             margin: 0;
         }
+
         .tab-gray {
             border-color: lightgray;
         }
+
         .border1r {
             border-width: 0 0.1em 0 0;
         }
+
         .border1t {
             border-width: 0.1em 0 0 0;
         }
+
         .border2 {
             border-width: 0.1em 0 0 0.1em;
         }
+
         .border3r {
             border-width: 0.1em 0.1em 0 0.1em;
         }
+
         .border3b {
             border-width: 0.1em 0 0.1em 0.1em;
         }
+
         .border4 {
             border-width: 0.1em 0.1em 0.1em 0.1em;
         }
-        .row-space1{
+
+        .row-space1 {
             height: 5px;
         }
-        .row-space2{
+
+        .row-space2 {
             height: 10px;
         }
-        .cell-left{
+
+        .cell-left {
             padding: 0;
             margin: 0;
             border: solid;
@@ -111,7 +125,7 @@
         }
 
         .trc1 {
-            width:60%;
+            width: 60%;
             border: solid;
             border-width: 0 0 0 0.1em;
             border-spacing: 1px;
@@ -126,17 +140,23 @@
             position: relative;
             bottom: 1px;
         }
+
         .cell-height0 {
             height: 15px;
         }
+
         .cell-height {
             height: 24px;
         }
+
         .cell-height2 {
             height: 35px;
         }
-        .lcell{
-            padding: 0; margin: 0;height: 100%;
+
+        .lcell {
+            padding: 0;
+            margin: 0;
+            height: 100%;
             text-indent: 5px;
         }
     </style>
@@ -144,71 +164,80 @@
 <body>
 <table style="width: 100%; height: 100%">
     <tr>
-        <td>{% include 'head.html' %}</td>
+        <td colspan="2">{% include 'head.html' %}</td>
     </tr>
     <tr>
-        <td>{% include 'head2.html' %}</td>
+        <td colspan="2">{% include 'head2.html' %}</td>
     </tr>
     <tr>
-        <td>{% include 'head3.html' %}</td>
+        <td colspan="2">{% include 'head3.html' %}</td>
     </tr>
     <tr>
-        <td>{% include 'temperature.html' %}</td>
+        <td colspan="2">{% include 'temperature.html' %}</td>
     </tr>
     <tr>
-        <td>{% include 'pam.html' %}</td>
+        <td colspan="2">{% include 'pam.html' %}</td>
     </tr>
     <tr>
-        <td>{% include 'frequ-surveillance.html' %}</td>
+        <td colspan="2">{% include 'frequ-surveillance.html' %}</td>
     </tr>
-    <tr>
+    <tr style="width:85%; height: 100%;">
         <td>
-            {% with title='' %}
-                {% include 'split.html' %}
-            {% endwith %}
+            <table style="width: 100%; height: 100%">
+                <tr>
+                    <td>
+                        {% with title='' %}
+                        {% include 'split.html' %}
+                        {% endwith %}
+                    </td>
+                </tr>
+                <tr>
+                    <td>{% include 'respiratoire.html' %}</td>
+                </tr>
+                <tr>
+                    <td>
+                        {% with title='' %}
+                        {% include 'split.html' %}
+                        {% endwith %}
+                    </td>
+                </tr>
+                <tr>
+                    <td>{% include 'glycemie.html' %}</td>
+                </tr>
+                <tr>
+                    <td>{% include 'neuro.html' %}</td>
+                </tr>
+                <tr>
+                    <td>{% include 'digestif.html' %}</td>
+                </tr>
+                <tr>
+                    <td>
+                        {% with title='' %}
+                        {% include 'split.html' %}
+                        {% endwith %}
+                    </td>
+                </tr>
+                <tr>
+                    <td>{% include 'rea.html' %}</td>
+                </tr>
+                <tr>
+                    <td>
+                        {% with title='' %}
+                        {% include 'split.html' %}
+                        {% endwith %}
+                    </td>
+                </tr>
+                <tr>
+                    <td>{% include 'peros.html' %}</td>
+                </tr>
+                <tr>
+                    <td>{% include 'alim.html' %}</td>
+                </tr>
+            </table>
         </td>
-    </tr>
-    <tr>
-        <td>{% include 'respiratoire.html' %}</td>
-    </tr>
-    <tr>
-        <td>
-            {% with title='' %}
-                {% include 'split.html' %}
-            {% endwith %}
+        <td style="width: 15%">
+            {% include 'right/main-right.html' %}
         </td>
-    </tr>
-    <tr>
-        <td>{% include 'glycemie.html' %}</td>
-    </tr>
-    <tr>
-        <td>{% include 'neuro.html' %}</td>
-    </tr>
-    <tr>
-        <td>{% include 'digestif.html' %}</td>
-    </tr>
-    <tr>
-        <td>
-            {% with title='' %}
-                {% include 'split.html' %}
-            {% endwith %}
-        </td>
-    </tr>
-    <tr>
-        <td>{% include 'rea.html' %}</td>
-    </tr>
-    <tr>
-        <td>
-            {% with title='' %}
-                {% include 'split.html' %}
-            {% endwith %}
-        </td>
-    </tr>
-    <tr>
-        <td>{% include 'peros.html' %}</td>
-    </tr>
-    <tr>
-        <td>{% include 'alim.html' %}</td>
     </tr>
 </table>
 </body>
