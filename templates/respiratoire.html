@@ -18,20 +18,21 @@
                     <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"> Pression Plateau</td></tr>
                     <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"> Aspi Sus-Glottique</td></tr>
                     <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"> Aspi Sous-Glottique</td></tr>
-                <tr class="cell-left cell-height bg-g" style="padding: 0; margin: 0;"><td class="lcell bg-red">
+                <tr class="cell-left cell-height2 bg-g" style="padding: 0; margin: 0;"><td class="lcell bg-red">
                         <table>
                             <tr>
-                                <td>&nbsp;<b>AEROSOLS</b></td></td>
-                                <td><b><input type="checkbox" class="checkbox__control">Bricanyl</b></td></td>
-                                <td><b><input type="checkbox" class="checkbox__control">Atrovent</b></td></td>
-                                <td><b><input type="checkbox" class="checkbox__control">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></td></td>
+                                <td colspan="3"><b> AEROSOLS:</b></td>
+                            </tr><tr>
+                                <td style="width: 30%;"><input type="checkbox" class="checkbox__control"> Bricanyl</td>
+                                <td style="width: 30%;"><input type="checkbox" class="checkbox__control"> Atrovent</td>
+                                <td ><input type="checkbox" class="checkbox__control"> _______</td>
                             </tr>
                         </table>
                     </tr>
             </table>
         </td>
         <td style="padding: 0; margin: 0;">
-            {% with nb_rows=14 %}
+            {% with nb_rows=14, bigrow=[13] %}
                 {% include 'timed-table.html' %}
             {% endwith %}
         </td><!--
