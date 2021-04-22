@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Verso</title>
+    <style type="text/css">
+        body {
+            font-size: 8pt;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .bg-g {
+            background-color: #eeeeee;
+        }
+
+        .bg-red {
+            background-color: rgba(70, 130, 180, 0.5) !important;
+        }
+
+        .title {
+            font-weight: bold;
+            text-align: center;
+            background-color: lightgray;
+        }
+
+        table {
+            border: 0px solid #000000;
+            border-collapse: collapse;
+            border-spacing: 0;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        tr, td {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .main-table {
+            border-collapse: collapse;
+            border: 0.1em solid currentColor;
+            border-spacing: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .temp-table {
+            border-collapse: collapse;
+            border: solid;
+            border-spacing: 0;
+            margin: 0;
+        }
+
+
+        .checkbox {
+            width: 1em;
+            height: 1em;
+            border-radius: 0.25em;
+            border: 0.1em solid currentColor;
+            vertical-align: middle;
+            position: relative;
+            bottom: 1px;
+        }
+    </style>
+</head>
+<body>
+<table style="width: 100%; height: 100%">
+    <tr>
+        <td>{% include 'verso/main-left.html' %}</td>
+        <td>{% include 'verso/main-right.html' %}</td>
+    </tr>
+</table>
+</body>
+</html>

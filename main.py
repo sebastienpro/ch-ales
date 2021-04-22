@@ -9,6 +9,10 @@ app = Flask(__name__)
 def template_main():
     return render_template('main.html', temps=temp_table(), pa=pa_table())
 
+@app.route("/verso")
+def template_verso():
+    return render_template('main-verso.html')
+
 
 @app.route("/rea.pdf")
 def pdf_main():
