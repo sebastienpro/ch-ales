@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 from flask_weasyprint import HTML, CSS, render_pdf
 app = Flask(__name__)
 
