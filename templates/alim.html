@@ -5,15 +5,20 @@
         </td>
         <td class="cl-1" style="padding: 0; margin: 0;">
             <table style="padding: 0; margin: 0;">
-                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"> REPAS</td>
-                            <td><input type="checkbox" class="checkbox__control">NL</td>
-                            <td><input type="checkbox" class="checkbox__control">DIAB</td>
-                            <td><input type="checkbox" class="checkbox__control">0 SEL</td>
-                            <td><input type="checkbox" class="checkbox__control">LEG</td>
-                            <td><input type="checkbox" class="checkbox__control">MIX</td>
+                    <tr class="cell-left cell-height2" style="padding: 0; margin: 0;">
+                        <td class="lcell">
+                            <table style="text-indent: 5px;"><tr>
+                            <td><b>REPAS:</b></td>
+                            <td><input type="checkbox" class="checkbox__control"><br>NL</td>
+                            <td><input type="checkbox" class="checkbox__control"><br>DIAB</td>
+                            <td><input type="checkbox" class="checkbox__control"><br>0SEL</td>
+                            <td><input type="checkbox" class="checkbox__control"><br>LEG</td>
+                            <td><input type="checkbox" class="checkbox__control"><br>MIX</td>
+                            </tr></table>
+                        </td>
                     </tr>
                     <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"><b>EAU:<span style="padding-left:150px">ml/24h</span></b></td></tr>
-                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"><b>ALIM ENTÉRALE:<span style="padding-left:150px">ml/24h</span></b></td></tr>
+                    <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell"><b>ALIM ENTÉRALE:<span style="padding-left:83px">ml/24h</span></b></td></tr>
                     <tr class="cell-left cell-height" style="padding: 0; margin: 0;"><td class="lcell">
                         <table style="text-indent: 5px;"><tr>
                             <td><input type="checkbox" class="checkbox__control"> HP</td>
@@ -24,7 +29,7 @@
             </table>
         </td>
         <td style="padding: 0; margin: 0;">
-            {% with nb_rows=4 %}
+            {% with nb_rows=4, bigrow=[0] %}
                 {% include 'timed-table.html' %}
             {% endwith %}
         </td>
