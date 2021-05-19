@@ -13,6 +13,13 @@ def template_main():
 def template_verso():
     return render_template('main-verso.html')
 
+@app.route("/verso.pdf")
+def pdf_verso():
+    css = CSS(string='@page { size: 450mm 620mm; margin: 0.5cm; }')
+    a3css = CSS(string='@page { size: A3; margin: 0.5cm; }')
+    #return render_template('main-verso.html')
+    html = render_template('main-verso.html')
+    return render_pdf(HTML(string=html), stylesheets=[css])
 
 @app.route("/rea.pdf")
 def pdf_main():

@@ -36,6 +36,10 @@
             border-spacing: 0;
         }
 
+        .no-border {
+            border: 0px solid #000000;
+        }
+
         .main-table {
             border-collapse: collapse;
             border: 0.1em solid currentColor;
@@ -71,7 +75,7 @@
     </style>
 </head>
 <body>
-<table style="width: 100%; height: 100%">
+<table style="width: 100%; height: 100%" class="no-border">
     <tr>
         <td style="width: 50%;">{% include 'verso/main-left.html' %}</td>
         <td style="width: 50%;">{% include 'verso/main-right.html' %}</td>
